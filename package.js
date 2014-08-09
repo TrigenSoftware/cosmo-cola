@@ -1,6 +1,6 @@
 Package.describe({
     summary: "ColaScript plugin for Meteor.",
-    version: "1.0.1"
+    version: "1.0.2"
 });
 
 Package._transitional_registerBuildPlugin({
@@ -10,6 +10,6 @@ Package._transitional_registerBuildPlugin({
         'compile-colascript.js'
     ],
     npmDependencies: {
-        "cola-script": "~0.5.0"
+        "cola-script": "0.5.83"
     }
 });
