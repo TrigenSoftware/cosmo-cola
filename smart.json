@@ -1,0 +1,9 @@
+{
+    "name": "cosmo-cola",
+    "description": "ColaScript plugin for Meteor.",
+    "homepage": "https://github.com/TrigenSoftware/cosmo-cola",
+    "author": "Dan Onoshko <danon0404@gmail.com>",
+    "version": "1.0.0",
+    "git": "https://github.com/TrigenSoftware/cosmo-cola.git"
+}
+      
