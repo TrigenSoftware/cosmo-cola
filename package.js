@@ -1,6 +1,8 @@
 Package.describe({
-    summary: "ColaScript plugin for Meteor.",
-    version: "1.0.2"
+  name: 'dangreen:cosmo-cola',
+  summary: 'ColaScript plugin for Meteor.',
+  version: '1.0.0',
+  git: 'https://github.com/TrigenSoftware/cosmo-cola.git'
 });
 
 Package._transitional_registerBuildPlugin({
@@ -10,6 +12,6 @@ Package._transitional_registerBuildPlugin({
         'compile-colascript.js'
     ],
     npmDependencies: {
-        "cola-script": "0.5.83"
+        "cola-script": "0.8.2"
     }
 });

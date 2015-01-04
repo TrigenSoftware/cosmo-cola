@@ -7,18 +7,22 @@ Plugin.registerSourceHandler("cola", function(compileStep) {
         result = "",
         outputFile = compileStep.inputPath + ".js",
 
-        stream = new Cola.OutputStream({ beautify : false, comments : false }),
+        stream = new Cola.OutputStream({ beautify : true, comments : true }),
         compressor = new Cola.Compressor({ is_js : false });
 
     try {
         // 1. compile
         var ast = Cola
             .parse(source, { is_js : false })
-            .toJavaScript({ main_binding : false });
+            .toJavaScript({ 
+                main_binding : false,
+                is_node : true,
+                modules : {}
+            });
 
         // 2. compress
-        ast.figure_out_scope();
-        ast = ast.transform(compressor);
+        // ast.figure_out_scope();
+        // ast = ast.transform(compressor);
 
         ast.print(stream);
         result = stream.toString();
