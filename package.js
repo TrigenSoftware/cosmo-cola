@@ -1,7 +1,7 @@
 Package.describe({
   name: 'dangreen:cosmo-cola',
   summary: 'ColaScript plugin for Meteor.',
-  version: '1.0.1',
+  version: '1.0.2',
   git: 'https://github.com/TrigenSoftware/cosmo-cola.git'
 });
 

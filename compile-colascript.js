@@ -16,7 +16,7 @@ Plugin.registerSourceHandler("cola", function(compileStep) {
             .parse(source, { is_js : false })
             .toJavaScript({ 
                 main_binding : false,
-                is_node : true,
+                is_meteor : true,
                 modules : {}
             });
 
