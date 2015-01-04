@@ -1,7 +1,7 @@
 *Cosmo Cola*
 ==========
 
-ColaScript plugin for Meteor.
+ColaScript](https://github.com/TrigenSoftware/ColaScript) plugin for Meteor.
 
 ## Installation
 
